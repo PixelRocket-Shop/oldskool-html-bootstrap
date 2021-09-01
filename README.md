@@ -41,8 +41,10 @@ In addition to all the Bootstrap components and features, OldSkool also offers t
 We used Webpack 4 to compile and build the template. [You can read more about Webpack here](https://webpack.js.org/).
 
 There are two commands for you to run for Webpack:
-**npm start** This starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
-**npm run build** This builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
+
+**npm start** - this starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
+
+**npm run build** - this builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
 
 ## Bootstrap Documentation
 Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)

@@ -6,6 +6,8 @@ The perfect starting point for any fashion retail website, OldSkool is a modern 
 
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/oldskool-html/homepage-medium.jpg "OldSkool | Responsive Bootstrap 5 Ecommerce Template")
 
+## Demo
+[Demo](http://example.com/)
 
 ## Template Pages
 The template consists of 3 pages:

@@ -132,6 +132,7 @@ The Webpack Handlebars plugin that we use comes with a very handy utility that a
 Please navigate to: src/data. Here is where our template data JSON files reside. You can edit, remove or add your own to this folder.
 
 Again, if we reference our category page loop:
+
 ```
 {{#if (config category-products)}}
     {{#each category-products.entries}}
@@ -142,8 +143,13 @@ Again, if we reference our category page loop:
 {{/if}}
 ```
 
+The important part here with regards to template data is category-products.entries. What this means is that inside our data folder you will find a JSON file called "category-products". This category-products.json file has a "key" called "entries".
 
 
-## Customising Template
+
+## Customise CSS/SASS
+All of the template's source CSS/SASS files are kept inside the template's assets folder. Navigate to src/assets/scss. Open up theme.scss with your editor.
+
+This is the main entry point for all other SASS/CSS files.
 
 ## Credits

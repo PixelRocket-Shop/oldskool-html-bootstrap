@@ -1,7 +1,7 @@
 # OldSkool - Bootstrap 5 HTML Responsive Template
 
 ## Overview
-OldSkool is a modern & flexible Bootstrap 5 template with customizable card listings in the category page and an excellent product display on the individual product page. It's the perfect starting point for any fashion retail website, and its clean and minimal design means it's easy to modify and painless to integrate to your custom Ecommerce application.
+OldSkool is a modern & flexible HTML Bootstrap 5 template with customizable card listings in the category page and an excellent product display on the individual product page. It's the perfect starting point for any fashion retail website, and the template's clean and minimal design means it's easy to modify and painless to integrate with your custom Ecommerce application.
 
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/oldskool-html/homepage-medium.jpg "OldSkool | Responsive Bootstrap 5 Ecommerce Template")
 

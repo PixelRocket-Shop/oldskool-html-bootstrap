@@ -1,7 +1,7 @@
 # OldSkool - Bootstrap 5 HTML Responsive Template
 
 ## Overview
-OldSkool is the perfect starting point for your next fashion retail website. This flexible and modern Bootstrap 5 template offers a clean and minimal design, customisable listing cards for the category page, and a simple yet elegant product page to beautifully display your products. 
+The perfect starting point for any fashion retail website, Oldskool is a modern & flexible Bootstrap 5 template with customizable card listings in the category page and an excellent product display on the individual products.
 
 ## Template Pages
 The template consists of 3 pages:
@@ -10,7 +10,7 @@ The template consists of 3 pages:
 * Category page
 * Product page
 
-More pages can quickly and easily be added. The source code using Handlebars.js as the templating language, and we've used Handlebars partials to keep code repetition to a minimum. In addition, we've also use a Handlebars plugin to pass in JSON data - which allows us to use Handlebars loops instead of endlessly repeating the same HTML code.
+To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add new pages or the same sections to all pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
 
 ## OldSkool Key Features

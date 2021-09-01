@@ -1,0 +1,157 @@
+/* image background control */
+.bg-img-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-contain {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-pos-center-center {
+    background-position: center center;
+}
+
+.bg-pos-center-top {
+    background-position: center top;
+}
+
+.bg-pos-center-bottom {
+    background-position: center bottom;
+}
+
+.bg-pos-left-top {
+    background-position: left top;
+}
+
+.bg-pos-left-center {
+    background-position: left center;
+}
+
+.bg-pos-right-center {
+    background-position: right center;
+}
+
+.bg-pos-right-top {
+    background-position: right top;
+}
+
+.bg-pos-center-bottom {
+    background-position: center bottom;
+}
+
+.bg-pos-left-bottom {
+    background-position: left bottom;
+}
+
+.bg-pos-right-bottom {
+    background-position: right bottom;
+}
+
+.bg-white-hover:hover {
+    background: $white !important;
+}
+
+// Overlay shadow dark
+.bg-overlay-gradient-dark {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0, 0.56) 0%, rgba(0,0,0,0) 99%);
+        z-index: 1;
+        border-radius: $border-radius;
+        transition: opacity ease-in-out 0.3s;
+  }
+}
+
+.bg-overlay-dark {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.4);
+        z-index: 1;
+        transition: opacity ease-in-out 0.3s;
+  }
+}
+
+// Overlay shadow light
+.bg-overlay-gradient-light {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(255,255,255, 0.56) 0%, rgba(255,255,255,0) 99%);
+        z-index: 1;
+        border-radius: $border-radius;
+        transition: opacity ease-in-out 0.3s;
+  }
+}
+
+/* Left and Right gradient, white to transparent */
+.bg-overlay-sides-white-to-transparent {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.93) 50%, rgba(255,255,255,0) 100%);
+        z-index: 10;
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.93) 50%, rgba(255,255,255,1) 100%);
+        z-index: 10;
+    }
+}
+
+/* overlay heights */
+.bg-overlay-h-25 {
+    &:after {
+        height: 25%;
+        top: auto;
+    }
+}
+
+.bg-overlay-h-50 {
+    &:after {
+        height: 50%;
+        top: auto;
+    }
+}
+
+.bg-overlay-h-75 {
+    &:after {
+        height: 75%;
+        top: auto;
+    }
+}

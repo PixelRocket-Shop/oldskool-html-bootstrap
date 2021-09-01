@@ -1,0 +1,18 @@
+/* adjust our gutter width for container on smaller breakpoints */
+@include media-breakpoint-down(xl) {
+    :root {
+        --bs-gutter-x: 3rem;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    :root {
+        --bs-gutter-x: 2rem;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    :root {
+        --bs-gutter-x: 1rem;
+    }
+}

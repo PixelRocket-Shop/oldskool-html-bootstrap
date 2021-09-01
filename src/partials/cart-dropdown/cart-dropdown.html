@@ -1,0 +1,51 @@
+<div class="cart-dropdown dropdown-menu">
+
+    <!-- Cart Header-->
+    <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
+        <h6 class="fw-bolder m-0">Cart Summary (2 items)</h6>
+        <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
+    </div>
+    <!-- / Cart Header-->
+
+    <!-- Cart Items-->
+    <div>
+
+        <!-- Cart Product-->
+        {{> 
+            cart-dropdown/cart-dropdown-item 
+            img="{{webRoot}}/assets/images/products/product-1.jpg"
+            name="Nike Air VaporMax 2021"
+            qty="1"
+            options="Size: 9"
+            price="$85.00"
+        }}
+
+        <!-- Cart Product-->
+        {{> 
+            cart-dropdown/cart-dropdown-item 
+            img="{{webRoot}}/assets/images/products/product-2.jpg"
+            name="Nike ZoomX Vaporfly"
+            qty="1"
+            options="Size: 11"
+            price="$125.00"
+        }}
+
+    </div>
+    <!-- /Cart Items-->
+
+    <!-- Cart Summary-->
+    <div>
+        <div class="pt-3">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-start mb-4 mb-md-2">
+                <div>
+                    <p class="m-0 fw-bold fs-5">Grand Total</p>
+                    <span class="text-muted small">Inc $45.89 sales tax</span>
+                </div>
+                <p class="m-0 fs-5 fw-bold">$422.99</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-dark w-100 text-center mt-3" role="button">Proceed to checkout</a>
+    </div>
+    <!-- / Cart Summary-->
+  </div>
+

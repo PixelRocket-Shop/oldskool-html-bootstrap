@@ -1,0 +1,12 @@
+/* image zoom css custom styles*/
+.medium-zoom-image--opened {
+    z-index: 99999;
+}
+.medium-zoom-overlay {
+    z-index: 9999;
+}
+
+/* small quick fix for any images that are set to width: 100% pre zoom */
+.w-100.medium-zoom-image.medium-zoom-image--opened {
+    width: auto !important;
+}

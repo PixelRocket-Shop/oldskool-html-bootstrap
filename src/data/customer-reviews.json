@@ -1,0 +1,46 @@
+{
+    "entries": [
+        {
+            "title": "Great fit, great price",
+            "by": "DaveD",
+            "date": "20th September 2020",
+            "review-width": "80%",
+            "review": "Worth buying this for value for money. But be warned: get one size larger as the medium is closer to small medium!"
+        },
+        {
+            "title": "Not worth the money",
+            "by": "Sandra K",
+            "date": "18th September 2020",
+            "review-width": "40%",
+            "review": "Loose and poor stiching on the sides. Won't buy this again."
+        },
+        {
+            "title": "Decent for the price",
+            "by": "MikeS",
+            "date": "16th September 2020",
+            "review-width": "90%",
+            "review": "I buy these often as they are good quality and value for money."
+        },
+        {
+            "title": "Great little T",
+            "by": "Frankie",
+            "date": "14th September 2020",
+            "review-width": "85%",
+            "review": "Wore this to my local music festival - went down well."
+        },
+        {
+            "title": "Great for the BBQ",
+            "by": "Kevin",
+            "date": "20th September 2020",
+            "review-width": "70%",
+            "review": "Bought this on the off chance it would work well with my skinny jeans, was a great decision. Would recommend."
+        },
+        {
+            "title": "Nothing special but it's okay",
+            "by": "Holly",
+            "date": "20th September 2020",
+            "review-width": "20%",
+            "review": "It's a t-shirt. What can I say, it does the job."
+        }
+    ]
+}

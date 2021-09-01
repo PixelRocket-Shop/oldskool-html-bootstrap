@@ -1,0 +1,16 @@
+.cart-dropdown.dropdown-menu {
+    display: none;
+    min-width: var(--theme-cart-dropdown-width);
+    margin: 0;
+    z-index: 9999;
+  }
+  
+  .cart-dropdown[data-show] {
+    display: block;
+}
+
+@include media-breakpoint-down(sm) {
+    .cart-dropdown.dropdown-menu {
+        --theme-cart-dropdown-width: 350px;
+    }
+}

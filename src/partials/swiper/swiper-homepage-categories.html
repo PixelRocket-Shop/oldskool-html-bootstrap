@@ -1,0 +1,51 @@
+<!-- Swiper Latest -->
+<div class="swiper-container overflow-hidden overflow-lg-visible"
+  data-swiper
+  data-options='{
+    "spaceBetween": 25,
+    "slidesPerView": 1,
+    "observer": true,
+    "observeParents": true,
+    "breakpoints": {     
+      "540": {
+        "slidesPerView": 1,
+        "spaceBetween": 0
+      },
+      "770": {
+        "slidesPerView": 2
+      },
+      "1024": {
+        "slidesPerView": 3
+      },
+      "1200": {
+        "slidesPerView": 4
+      },
+      "1500": {
+        "slidesPerView": 5
+      }
+    },   
+    "navigation": {
+      "nextEl": ".swiper-next",
+      "prevEl": ".swiper-prev"
+    }
+  }'>
+  <div class="swiper-wrapper">
+      {{#each entries}}
+      <div class="swiper-slide align-self-stretch bg-transparent h-auto">
+        <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="{{@index}}00">
+            <picture class="d-block mb-4 img-clip-shape-one">
+                <img class="w-100" title="" src="{{ img }}" alt="{{../config.defaultImgAlt}}">
+            </picture>
+            <p class="title-small mb-2 text-muted">{{ small-title }}</p>
+            <h4 class="lead fw-bold">{{ large-title }}</h4>
+            <a href="{{webRoot}}/category.html" class="btn btn-psuedo align-self-start">{{ button-text }}</a>
+        </div>
+      </div>
+      {{/each}}
+  </div>
+
+  <div class="swiper-btn swiper-prev swiper-disabled-hide swiper-btn-side btn-icon bg-white text-dark ms-3 shadow mt-n5"><i class="ri-arrow-left-s-line "></i></div>
+  <div class="swiper-btn swiper-next swiper-disabled-hide swiper-btn-side swiper-btn-side-right btn-icon bg-white text-dark me-3 shadow mt-n5"><i class="ri-arrow-right-s-line ri-lg"></i></div>
+
+</div>
+<!-- / Swiper Latest-->

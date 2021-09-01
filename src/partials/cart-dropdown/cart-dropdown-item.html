@@ -1,0 +1,17 @@
+<div class="row mx-0 py-4 g-0 border-bottom">
+    <div class="col-2">
+        <picture class="d-block bg-light">
+            <img class="img-fluid" src="{{ img }}" alt="{{config.defaultImgAlt}}">
+        </picture>
+    </div>
+    <div class="col-9 offset-1">
+        <div>
+            <h6 class="justify-content-between d-flex align-items-start mb-2">
+                {{ name }}
+                <i class="ri-close-line ms-3"></i>
+            </h6>
+            <span class="d-block text-muted fw-bolder text-uppercase fs-9">{{ options }} / Qty: {{ qty }}</span>
+        </div>
+        <p class="fw-bolder text-end text-muted m-0">{{ price }}</p>
+    </div>
+</div>

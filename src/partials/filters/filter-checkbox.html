@@ -1,0 +1,6 @@
+<div class="form-group form-check-custom mb-1">
+    <input type="checkbox" class="form-check-input" id="filter-{{ type }}-{{ @index }}">
+    <label class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+        for="filter-{{ type }}-{{ @index }}">{{ label }} {{#if count}} <span
+            class="text-muted ms-1 fs-9">({{ count }})</span>{{/if}}</label>
+</div>

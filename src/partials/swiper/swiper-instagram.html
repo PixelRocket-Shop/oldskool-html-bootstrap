@@ -1,0 +1,52 @@
+<!-- Swiper Instagram -->
+{{#if (config slideshow-instagram) }}
+<h3 class="title-small text-muted text-center mb-3 mt-5"><i class="ri-instagram-line align-bottom"></i>
+    #OLDSKOOL
+</h3>
+<div class="overflow-hidden">
+  <div class="swiper-container swiper-overflow-visible"
+    data-swiper
+    data-options='{
+        "spaceBetween": 20,
+        "loop": true,
+        "autoplay": {
+          "delay": 5000,
+          "disableOnInteraction": false
+        },
+        "breakpoints": {
+          "400": {
+            "slidesPerView": 2
+          },
+          "600": {
+            "slidesPerView": 3
+          },       
+          "999": {
+            "slidesPerView": 5
+          },
+          "1024": {
+            "slidesPerView": 6
+          }
+        }
+      }'>
+    <div class="swiper-wrapper mb-5">
+
+      <!-- Start of instagram slideshow loop for items-->
+      {{#each slideshow-instagram.entries}}
+      <div class="swiper-slide flex-column">
+        <picture>
+          <img
+            class="rounded shadow-sm img-fluid"
+            data-zoomable
+            src="{{ img }}"
+            title=""
+            alt="">
+        </picture>
+      </div>
+      {{/each}}
+      <!-- / end of items loop-->
+
+    </div>
+  </div>
+</div>
+<!-- /Swiper Instagram-->
+{{/if}}

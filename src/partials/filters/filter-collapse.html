@@ -1,0 +1,36 @@
+<div class="row gx-5">
+
+    <!-- Price Filter-->
+    <div class="col-4 widget-filter-price">
+        <p class="small fs-6 fw-bolder border-bottom pb-3 mb-4">Price</p>
+        {{> filters/filter-price }}
+    </div>
+    <!-- /Price Filter-->
+
+
+    <!-- Sizes Filter-->
+    <div class="col-4">
+        <p class="small fs-6 fw-bolder border-bottom pb-3 mb-4">Sizes</p>
+        <div>
+            <div class="filter-options mt-3">
+                {{#each filters-one.sizes }}
+                    {{> filters/filter-checkbox-two this type="sizes" }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <!-- /Sizes Filter-->
+
+    <!-- Colour Filter-->
+    <div class="col-4">
+        <p class="small fs-6 fw-bolder border-bottom pb-3 mb-4">Colour</p>
+        <div>
+            <div class="filter-options mt-3">
+                {{#each filters-one.colours }}
+                    {{> filters/filter-colour this type="colours" }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <!-- /Colour Filter-->
+</div>

@@ -1,0 +1,83 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0 {{ configClassList }} {{ classList }}">
+    <div class="container-fluid">
+        <div class="w-100">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+                <!-- Logo-->
+                <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="{{webRoot}}/index.html">
+                    {{> logo/logo-icon }}
+                </a>
+                <!-- / Logo-->
+
+                <!-- Navbar Icons-->
+                <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
+
+                    <!-- Mobile Nav Toggler-->
+                    <li class="d-lg-none">
+                        <span class="nav-link text-body d-flex align-items-center cursor-pointer" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menu</span>
+                    </li>
+                    <!-- /Mobile Nav Toggler-->
+
+                    <!-- Navbar Search-->
+                    <li class="d-none d-sm-block">
+                        <span class="nav-link text-body search-trigger cursor-pointer">Search</span>
+
+                        <!-- Search navbar overlay-->
+                        <div class="navbar-search d-none">
+                            <div class="input-group mb-3 h-100">
+                                <span class="input-group-text px-4 bg-transparent border-0"><i
+                                        class="ri-search-line ri-lg"></i></span>
+                                <input type="text" class="form-control text-body bg-transparent border-0"
+                                    placeholder="Enter your search terms...">
+                                <span
+                                    class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
+                                        class="ri-close-circle-line ri-lg"></i></span>
+                            </div>
+                        </div>
+                        <div class="search-overlay"></div>
+                        <!-- / Search navbar overlay-->
+
+                    </li>
+                    <!-- /Navbar Search-->
+
+                    <!-- Navbar Login-->
+                    <li class="ms-1 d-none d-lg-inline-block">
+                        <a class="nav-link text-body" href="{{webRoot}}/auth-login.html">
+                            Account
+                        </a>
+                    </li>
+                    <!-- /Navbar Login-->
+
+                    <!-- Navbar Cart Icon-->
+                    <li class="ms-1 d-inline-block position-relative dropdown-cart">
+                        <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
+                            type="button">
+                            Bag (2)
+                        </button>
+                        {{> cart-dropdown/cart-dropdown }}
+
+                    </li>
+                    <!-- /Navbar Cart Icon-->
+
+                </ul>
+                <!-- Navbar Icons-->                
+
+                <!-- Main Navigation-->
+                <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                    id="navbarNavDropdown">
+
+                    <!-- Menu-->
+                    {{> navbar/menu }}
+                    <!-- / Menu-->
+
+                </div>
+                <!-- / Main Navigation-->
+
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- / Navbar-->

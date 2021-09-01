@@ -1,0 +1,74 @@
+{
+    "entries": [{
+            "title": "Nike Air VaporMax 2021",
+            "price": "329.99",
+            "sale-price": "198.66",
+            "currency": "$",
+            "options": "4 colours, 10 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+        },
+        {
+            "title": "Nike ZoomX Vaporfly",
+            "price": "275.45",
+            "new": true,
+            "currency": "$",
+            "options": "2 colours, 4 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-2.jpg"
+        },
+        {
+            "title": "Nike Blazer Mid '77",
+            "price": "198.56",
+            "sold-out": true,
+            "currency": "$",
+            "options": "5 colours, 6 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-3.jpg"
+        },
+        {
+            "title": "Nike Air Force 1",
+            "price": "425.85",
+            "currency": "$",
+            "options": "6 colours, 9 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-4.jpg"
+        },
+        {
+            "title": "Nike Air Max 90",
+            "price": "196.99",
+            "sale-price": "98.66",
+            "currency": "$",
+            "options": "4 colours, 10 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-5.jpg"
+        },
+        {
+            "title": "Nike Glide FlyEase",
+            "price": "329.99",
+            "sale-price": "198.66",
+            "new": true,
+            "currency": "$",
+            "options": "1 colour",
+            "img": "{{webRoot}}/assets/images/products/product-6.jpg"
+        },
+        {
+            "title": "Nike Zoom Freak",
+            "price": "444.99",
+            "currency": "$",
+            "options": "2 colours, 2 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-7.jpg"
+        },
+        {
+            "title": "Nike Air Pegasus",
+            "price": "178.99",
+            "new": true,
+            "currency": "$",
+            "options": "3 colours, 10 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-8.jpg"
+        },
+        {
+            "title": "Nike Air Jordans",
+            "price": "154.99",
+            "new": true,
+            "currency": "$",
+            "options": "3 colours, 10 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+        }
+    ]
+}

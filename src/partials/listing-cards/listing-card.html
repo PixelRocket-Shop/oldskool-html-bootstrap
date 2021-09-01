@@ -1,0 +1,39 @@
+<!-- Card Product-->
+<div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+    <div class="card-img position-relative">
+        <div class="card-badges">
+            {{#if sale-price}}
+                <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
+            {{/if}} 
+            {{#if new}}
+                <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> New In</span>
+            {{/if}} 
+            {{#if sold-out}}
+                <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-secondary rounded-circle d-block me-1"></span> Sold Out</span>
+            {{/if}} 
+        </div>
+        <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+        <picture class="position-relative overflow-hidden d-block bg-light">
+            <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ img }}" alt="{{config.defaultImgAlt}}">
+        </picture>
+        {{#unless sold-out}}
+            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
+            </div>
+        {{/unless}}
+    </div>
+    <div class="card-body px-0">
+        <a class="text-decoration-none link-cover" href="{{webRoot}}/product.html">{{ title }}</a>
+        <small class="text-muted d-block">{{ options }}</small>
+        {{#if sold-out}}
+            <p class="mt-2 mb-0 small text-muted">Sold Out</p>
+        {{else}}
+            {{#if sale-price}}
+                <p class="mt-2 mb-0 small"><s class="text-muted">{{ currency }}{{ price }}</s> <span class="text-danger">{{ currency }}{{ sale-price }}</span></p>
+            {{else}}
+                <p class="mt-2 mb-0 small">{{ currency }}{{ price }}</p>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>
+<!--/ Card Product-->

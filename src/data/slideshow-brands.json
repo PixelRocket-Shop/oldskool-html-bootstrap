@@ -1,0 +1,30 @@
+{
+    "entries": [{
+            "img": "{{webRoot}}/assets/images/logos/logo-1.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-2.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-3.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-4.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-5.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-6.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-7.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-8.svg"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-9.svg"
+        }
+    ]
+}

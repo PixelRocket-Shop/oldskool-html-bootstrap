@@ -1,0 +1,44 @@
+.title-small {
+    letter-spacing: .20em;
+    text-transform: uppercase;
+    font-size: .80rem;
+    font-weight: 600;
+    display: block;
+}
+
+.text-outline-light {
+    color: transparent; 
+    -webkit-text-stroke: 2px $white;
+}
+
+.text-outline-dark {
+    color: transparent; 
+    -webkit-text-stroke: 2px $body-color;
+}
+
+.bg-text {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-text-title {
+    font-size: 390px;
+}
+
+@include media-breakpoint-down(xl) { 
+    .bg-text-title {
+        font-size: 290px;
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    .bg-text-title {
+        font-size: 190px;
+    }
+}
+
+@include media-breakpoint-down(md) { 
+    .bg-text-title {
+        display: none
+    }
+}

@@ -1,0 +1,45 @@
+.noUi-tooltip {
+    background: rgba(0,0,0, 0.9);
+    color: white;
+    font-size: 12px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.noUi-handle {
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 100%;
+    border: 0;
+    background: white;
+    box-shadow: 0 .25rem .5rem rgba(29, 48, 61, 0.184);
+    margin-top: -5px;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+    display: none;
+}
+
+.noUi-target {
+    border: 0;
+    box-shadow: none;
+    height: 4px;
+    background: #f7f8f9;
+}
+
+.noUi-connect {
+    background: #1c212c;
+}
+
+.noUi-marker-large {
+    background: #f7f8f9;
+    margin-top: 5px;
+}
+
+.noUi-value {
+    font-size: 12px;
+    font-weight: 500;
+    color: #a0a0a2;
+    margin-top: 10px;
+}

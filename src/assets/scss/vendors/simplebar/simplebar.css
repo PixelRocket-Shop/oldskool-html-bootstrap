@@ -1,0 +1,17 @@
+.simplebar-content {
+    padding-right: 1.25rem !important;
+}
+.simplebar-track {
+    background: #f7f8f9;
+    border-radius: 4px;
+}
+
+.simplebar-track.simplebar-vertical {
+    width: 7px;
+}
+.simplebar-scrollbar {
+    opacity: .5;
+}
+.simplebar-wrapper {
+    height: 150px;
+}

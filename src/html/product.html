@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> (config config.partials.navbar)
+        configClassList=config.classes.navbar
+        classList="" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <section class="mt-0 {{ config.classes.content }}">
+        <!-- Page Content Goes Here -->            
+        
+        <!-- Breadcrumbs-->
+        <div class="bg-dark py-6">
+            <div class="container-fluid">
+                {{> breadcrumbs/breadcrumbs-light 
+                    category="T-Shirts"
+                    page="Osaka Japan Mens T-Shirt"
+                }}
+            </div>
+        </div>
+        <!-- / Breadcrumbs-->
+
+        <div class="container-fluid mt-5">
+
+            <!-- Product Top Section-->
+            <div class="row g-9" data-sticky-container>
+
+                <!-- Product Images-->
+                <div class="col-12 col-md-6 col-xl-7">
+                    {{> product/product-gallery }}
+                </div>
+                <!-- /Product Images-->
+    
+                <!-- Product Information-->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="sticky-top top-5">
+                        {{> product/product-info }}
+                    </div>
+                </div>
+                <!-- / Product Information-->
+            </div>
+            <!-- / Product Top Section-->
+
+            <div class="row g-0">
+
+                <!-- Related Products-->
+                {{> product/product-related }}
+                <!-- / Related Products-->
+
+                <!-- Reviews-->
+                <div class="col-12">
+                    {{> product/product-reviews }}
+                </div>
+                <!-- / Reviews-->
+            </div>
+
+        </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer)
+            configClassList=config.classes.footer
+            classList=""
+        }}
+    <!-- / Footer-->  
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

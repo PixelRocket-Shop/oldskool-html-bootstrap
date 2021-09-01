@@ -1,0 +1,50 @@
+/*
+ * Payment Icons. This makes it easy for you to include a list of payment provider icons to your website or app.
+ * Created by Jasper codepen.io/jasper
+ *
+ * Version: 0.0.1
+ *
+ * All icons are © to their respective owners
+ * Icon designs by behance.net/spektrum44
+ *
+*/
+
+
+.pi {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    width: 40px;
+    min-height: 30px;
+    background-origin: padding-box;
+
+    &.pi-paypal { background: url('../svgs/paypal.svg') center center no-repeat;}
+    &.pi-apple-pay { background: url('../svgs/apple-pay.svg') center center no-repeat;}
+    &.pi-google-pay { background: url('../svgs/google-pay.svg') center center no-repeat;}
+    &.pi-alipay { background: url('../svgs/alipay.svg') center center no-repeat;}
+    &.pi-mastercard { background: url('../svgs/mastercard.svg') center center no-repeat;}
+    &.pi-visa { background: url('../svgs/visa.svg') center center no-repeat;}
+    &.pi-american-express { background: url('../svgs/american-express.svg') center center no-repeat;}
+    &.pi-diners-club { background: url('../svgs/diners-club.svg') center center no-repeat;}
+    &.pi-maestro { background: url('../svgs/maestro.svg') center center no-repeat;}
+    &.pi-vpay { background: url('../svgs/vpay.svg') center center no-repeat;}
+    &.pi-girocard { background: url('../svgs/girocard.svg') center center no-repeat;}
+    &.pi-klarna { background: url('../svgs/klarna.svg') center center no-repeat;}
+    &.pi-giropay { background: url('../svgs/giropay.svg') center center no-repeat;}
+    &.pi-ideal { background: url('../svgs/ideal.svg') center center no-repeat;}
+    &.pi-przelewy24 { background: url('../svgs/przelewy24.svg') center center no-repeat;}
+    &.pi-bitcoin { background: url('../svgs/bitcoin.svg') center center no-repeat;}
+    &.pi-ethereum { background: url('../svgs/ethereum.svg') center center no-repeat;}
+    &.pi-ripple { background: url('../svgs/ripple.svg') center center no-repeat;}
+
+    &.pi-lg {
+        width: 80px;
+    }
+
+    &.pi-sm {
+        width: 25px;
+        min-height: 15px;
+    }
+}

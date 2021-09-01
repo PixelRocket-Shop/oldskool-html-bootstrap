@@ -1,0 +1,28 @@
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: $spacer;
+    margin-right: $spacer;
+
+    &.dropdown-toggle {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/* navbar mobile & tablet menu stylings*/
+@include media-breakpoint-down(lg) { 
+    .navbar-collapse .nav-link {
+        padding: 1rem;
+        background: $gray-100;
+        border-radius: $border-radius;
+        margin: 0 0 .25rem;
+    }
+    .nav-sidelinks .nav-link {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+}

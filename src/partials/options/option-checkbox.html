@@ -1,0 +1,11 @@
+<div class="form-check-option {{ option-classes }}">
+    <input 
+        type="checkbox" 
+        name="product-option-{{ type }}" 
+        value="{{ value }}" 
+        id="option-{{ type }}-{{ @index }}">
+    <label for="option-{{ type }}-{{ @index }}">
+        {{#if label-top }}<small class="d-block">{{ label-top }}</small>{{/if}}
+        {{#if label-top }}<small>{{ label-bottom }}</small>{{/if}}
+    </label>
+</div>

@@ -1,0 +1,12 @@
+/* generic site wide styles*/
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-font {
+    font-family: var(--theme-font-headings);
+}
+
+.disable-child-pointer * {
+    pointer-events: none;
+}

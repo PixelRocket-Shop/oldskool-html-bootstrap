@@ -1,0 +1,102 @@
+{
+    "brands": [
+        {
+            "label": "Adidas",
+            "count": "21"
+        },
+        {
+            "label": "Asics",
+            "count": "13"
+        },
+        {
+            "label": "Canterbury",
+            "count": "18"
+        },
+        {
+            "label": "Converse",
+            "count": "25"
+        },
+        {
+            "label": "Donnay",
+            "count": "11"
+        },
+        {
+            "label": "Nike",
+            "count": "19"
+        },
+        {
+            "label": "Millet",
+            "count": "24"
+        },
+        {
+            "label": "Puma",
+            "count": "11"
+        },
+        {
+            "label": "Reebok",
+            "count": "19"
+        },
+        {
+            "label": "Under Armour",
+            "count": "24"
+        }           
+    ],
+    "sizes": [
+        {
+            "label": "6.5"
+        },
+        {
+            "label": "7"
+        },
+        {
+            "label": "7.5"
+        },
+        {
+            "label": "8"
+        },
+        {
+            "label": "8.5"
+        },
+        {
+            "label": "9"
+        },
+        {
+            "label": "9.5"
+        },
+        {
+            "label": "10"
+        },
+        {
+            "label": "10.5"
+        },
+        {
+            "label": "11"
+        },
+        {
+            "label": "11.5"
+        }          
+    ],
+    "colours": [
+        {
+            "colour-class": "form-check-primary"
+        },
+        {
+            "colour-class": "form-check-success"
+        },
+        {
+            "colour-class": "form-check-danger"
+        },
+        {
+            "colour-class": "form-check-info"
+        },
+        {
+            "colour-class": "form-check-warning"
+        },
+        {
+            "colour-class": "form-check-dark"
+        },
+        {
+            "colour-class": "form-check-secondary"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "defaultPageTitle": "OldSkool - Bootstrap 5 HTML Template",
+    "templateName": "OldSkool",
+    "classes": {
+        "body": "",
+        "navbar": "",
+        "content": "",
+        "footer": ""
+    },
+    "partials": {
+        "head": "head/head",
+        "navbar": "navbar/navbar",
+        "footer": "footer/footer"
+    },
+    "defaultImgAlt": "HTML Bootstrap Template by Pixel Rocket",
+    "helpDocsURL": "",
+    "demoURL": ""
+}

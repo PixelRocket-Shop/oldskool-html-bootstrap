@@ -1,0 +1,7 @@
+<svg width="0" height="0">
+  <defs>
+  <clipPath id="svg-slanted-one" clipPathUnits="objectBoundingBox">
+      <path d="M0.822,1 H0.016 a0.015,0.015,0,0,1,-0.016,-0.015 L0.158,0.015 A0.016,0.015,0,0,1,0.173,0 L0.984,0 a0.016,0.015,0,0,1,0.016,0.015 L0.837,0.985 A0.016,0.015,0,0,1,0.822,1"></path>
+  </clipPath>
+  </defs>
+</svg>

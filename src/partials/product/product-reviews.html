@@ -1,0 +1,26 @@
+<h3 class="fs-4 fw-bolder mt-7 mb-4 reviews">Reviews</h3>
+
+<!-- Review Summary-->
+{{> reviews/review-summary }}
+<!-- / Rewview Summary-->
+
+<!-- Reviews-->
+{{# if (config customer-reviews)}}
+<div class="row g-6 g-md-8 g-lg-10 my-3">
+    {{#each customer-reviews.entries}}
+    <div class="col-12 col-lg-6 col-xxl-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            {{> reviews/review-stars-small colour="text-dark" width=review-width }}
+            <div class="text-muted small">{{ date }} by {{ by }}</div>
+        </div>
+        <p class="fw-bold mb-2">{{ title }}</p>
+        <p class="fs-7">{{ review }}</p>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+<!-- / Reviews-->
+
+<!-- Review Pagination-->
+{{> pagination/pagination amount="6 of 105" type="reviews" }}
+<!-- / Review Pagination-->

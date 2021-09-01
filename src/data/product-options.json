@@ -1,0 +1,29 @@
+{
+    "entries": [
+        {
+            "label-bottom": "S",
+            "value": "S"
+        },
+        {
+            "label-bottom": "SM",
+            "value": "SM"
+        },
+        {
+            "label-bottom": "M",
+            "value": "M",
+            "selected": true
+        },
+        {
+            "label-bottom": "L",
+            "value": "L"
+        },
+        {
+            "label-bottom": "XL",
+            "value": "Xl"
+        },
+        {
+            "label-bottom": "XXL",
+            "value": "XXL"
+        }
+    ]
+}

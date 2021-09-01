@@ -1,0 +1,25 @@
+.breadcrumb-item {
+    text-transform: uppercase;
+    color: $text-muted;
+    letter-spacing: .04rem;
+
+    a {
+        color: $text-muted;
+    }
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+.breadcrumb-item.breadcrumb-light {
+    color: $white;
+
+    &:before {
+        color: $white;
+    }
+
+    a {
+        color: $white;
+    }
+}

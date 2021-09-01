@@ -1,0 +1,138 @@
+
+.card-badges {
+    position: absolute;
+    z-index: 20;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* card expand */
+.card-expand {
+    padding-left: var(--bs-gutter-width);
+    padding-right: var(--bs-gutter-width);
+}
+
+/* handle width calc for smaller devices */
+@include media-breakpoint-up(md) { 
+    .card-expand {
+        width: auto;
+    }
+}
+@include media-breakpoint-up(xl) { 
+    .card-expand {
+        width: calc(50vw + (var(--theme-maxwidth-breakpoint-xl) / 2) - (var(--bs-spacer) * 2));
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: var(--swiper-slide-spacing);
+        padding-left: 0;
+    }
+}
+@include media-breakpoint-up(xxl) { 
+    .card-expand {
+        width: calc(50vw + (var(--theme-maxwidth-breakpoint-xxl) / 2) - (var(--bs-spacer) * 2));
+    }
+}
+
+/* card svg clip-path */
+
+.img-clip-shape-one {
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+@include media-breakpoint-up(xl) { 
+    .img-clip-shape-one {
+        clip-path: url("#svg-slanted-one");
+        border-radius: 0;
+        overflow: visible;
+    }
+}
+
+.card-title-rotate {
+    transition: all ease-in .3s;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+}
+
+.card-rotate {
+    overflow: hidden;
+}
+
+.card-img-zoom {
+    transition: all ease-in .5s;
+}
+
+.card-rotate .link-cover:after {
+    background: rgba(0,0,0,.2);
+    z-index: 10;
+}
+
+.card:hover {
+    .card-img-zoom {
+        transform: scale(1.02);
+    }
+    .card-title-show-hover, .card-link-show-hover  {
+        opacity: 1;
+        transform: translateY(0)
+    }
+    .card-title-wrapper {
+        bottom: -100%;
+    }
+}
+
+
+.card-rotate .card-title-wrapper {
+    transition: all ease-in .3s .2s;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    z-index: 20;
+}
+
+.card-link-show-hover {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all ease-in .2s .2s;
+    transform: translateY(20%);
+    opacity: 0;
+    z-index: 20;
+}
+
+.card-title-show-hover {
+    transition: all ease-in .3s;
+    transform: translateY(-20%); 
+    opacity: 0;
+    z-index: 20;
+    position: relative;
+}
+
+/* card overlay */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    flex-direction: column;
+    opacity: 0;
+}
+.page-loaded .card-overlay {
+    transition: opacity ease-in .2s;
+}
+
+.card:hover {
+    .card-overlay {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> (config config.partials.navbar)
+        configClassList=config.classes.navbar
+        classList="" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <section class="mt-0 overflow-hidden {{ config.classes.content }}">
+        <!-- Page Content Goes Here -->
+
+        <!-- / Top banner -->
+        <section class="vh-75 vh-lg-60 container-fluid rounded overflow-hidden" data-aos="fade-in">
+            {{> swiper/swiper-homepage-hero }}
+        </section>
+        <!--/ Top Banner-->
+
+        <!-- Featured Brands-->
+        <div class="brand-section container-fluid" data-aos="fade-in">
+            <div class="bg-overlay-sides-white-to-transparent bg-white py-5 py-md-7">
+                {{> marquee/marquee-logos }}
+            </div>
+        </div>
+        <!--/ Featured Brands-->
+
+        <div class="container-fluid">
+
+            <!-- Featured Categories-->
+            <div class="m-0">
+                {{#if (config homepage-categories) }}
+                    {{>
+                        swiper/swiper-homepage-categories
+                        entries=homepage-categories.entries
+                    }}
+                {{/if}}
+                <!-- SVG Used for Clipath on featured images above-->
+                {{> svg/svg-clip-path-one }}
+            </div>
+            <!-- /Featured Categories-->
+
+            <!-- Homepage Intro-->
+            <div class="position-relative row my-lg-7 pt-5 pt-lg-0 g-8">
+                <div class="bg-text bottom-0 start-0 end-0">
+                    <h2 class="bg-text-title opacity-10"><span class="text-outline-dark">Old</span>Skool</h2>
+                </div>
+                <div class="col-12 col-md-6 position-relative z-index-20 mb-7 mb-lg-0">
+                    <p class="text-muted title-small">Welcome</p>
+                    <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">OldSkool</span> - streetwear & footwear specialists</h3>
+                    <p class="lead">We are OldSkool, a leading supplier of global streetwear brands, including names such as <a href="{{webRoot}}/category.html">Stussy</a>, <a href="{{webRoot}}/category.html">Carhartt</a>, <a href="{{webRoot}}/category.html">Gramicci</a>, <a href="{{webRoot}}/category.html">Afends</a> and many more.</p>
+                    <p class="lead">With worldwide shipping and unbeatable prices - now's a great time to pick out something from our range.</p>
+                    <a href="{{webRoot}}/category.html" class="btn btn-psuedo" role="button">Shop New Arrivals</a>
+                </div>
+                <div class="col-12 col-md-6 position-relative z-index-20 pe-0">
+                    <picture class="w-50 d-block position-relative z-index-10 border border-white border-4 shadow-lg">
+                        <img class="img-fluid" src="{{webRoot}}/assets/images/banners/banner-5.jpg" alt="{{config.defaultImgAlt}}">
+                    </picture>
+                    <picture class="w-60 d-block me-8 mt-n10 shadow-lg border border-white border-4 position-relative z-index-20 ms-auto">
+                        <img class="img-fluid" src="{{webRoot}}/assets/images/banners/banner-6.jpg" alt="{{config.defaultImgAlt}}">
+                    </picture>
+                    <picture class="w-50 d-block me-8 mt-n7 shadow-lg border border-white border-4 position-absolute top-0 end-0 z-index-0 ">
+                        <img class="img-fluid" src="{{webRoot}}/assets/images/banners/banner-7.jpg" alt="{{config.defaultImgAlt}}">
+                    </picture>
+                </div>
+            </div>
+            <!-- / Homepage Intro-->
+
+            <!-- Homepage Banners-->
+            <div class="pt-7 mb-5 mb-lg-10">
+                <div class="row g-4">
+                    <div class="col-12 col-xl-6 position-relative">
+                        <picture class="position-relative z-index-10">
+                            <img class="w-100 rounded" src="{{webRoot}}/assets/images/banners/banner-sale.jpg" alt="{{config.defaultImgAlt}}">
+                        </picture>
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center z-index-20">
+                            <div class="py-6 px-5 px-lg-10 text-center w-100">
+                                <h2 class="display-1 mb-3 fw-bold text-white"><span class="text-outline-light">Flash</span> Sale</h2>
+                                <p class="fs-5 fw-light text-white d-none d-md-block">Our yearly flash sale is now on! Grab yourself a bargain from the world's leading streetwear brands.</p>
+                                <a href="{{webRoot}}/category.html" class="btn btn-psuedo text-white" role="button">Shop All Sale Items</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="row g-4 justify-content-end">
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card position-relative overflow-hidden">
+                                    <picture class="position-relative z-index-10 d-block bg-light">
+                                        <img class="w-100 rounded" src="{{webRoot}}/assets/images/banners/banner-8.jpg" alt="{{config.defaultImgAlt}}">
+                                    </picture>
+                                    <div class="card-overlay">
+                                        <p class="lead fw-bolder mb-2">The Jordan Delta 2</p>
+                                        <a href="{{webRoot}}/category.html" class="btn btn-psuedo text-white py-2" role="button">Shop Kicks</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card position-relative overflow-hidden">
+                                    <picture class="position-relative z-index-10 d-block bg-light">
+                                        <img class="w-100 rounded" src="{{webRoot}}/assets/images/banners/banner-9.jpg" alt="{{config.defaultImgAlt}}">
+                                    </picture>
+                                    <div class="card-overlay">
+                                        <p class="lead fw-bolder mb-2">Latest Mens Shirts</p>
+                                        <a href="{{webRoot}}/category.html" class="btn btn-psuedo text-white py-2" role="button">Shop New</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card position-relative overflow-hidden">
+                                    <picture class="position-relative z-index-10 d-block bg-light">
+                                        <img class="w-100 rounded" src="{{webRoot}}/assets/images/banners/banner-10.jpg" alt="{{config.defaultImgAlt}}">
+                                    </picture>
+                                    <div class="card-overlay">
+                                        <p class="lead fw-bolder mb-2">KiiKii Osake Tees</p>
+                                        <a href="{{webRoot}}/category.html" class="btn btn-psuedo text-white py-2" role="button">Shop T-Shirts</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card position-relative overflow-hidden">
+                                    <picture class="position-relative z-index-10 d-block bg-light">
+                                        <img class="w-100 rounded" src="{{webRoot}}/assets/images/banners/banner-11.jpg" alt="{{config.defaultImgAlt}}">
+                                    </picture>
+                                    <div class="card-overlay">
+                                        <p class="lead fw-bolder mb-2">Multibuy Womens Shirts</p>
+                                        <a href="{{webRoot}}/category.html" class="btn btn-psuedo text-white py-2" role="button">Shop Sale Items</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Homepage Banners-->
+
+            <!-- Instagram-->
+            {{> swiper/swiper-instagram}}
+            <!-- / Instagram-->
+
+        </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer)
+            configClassList=config.classes.footer
+            classList=""
+        }}
+    <!-- / Footer-->
+
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

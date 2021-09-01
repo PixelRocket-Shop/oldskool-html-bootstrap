@@ -1,0 +1,246 @@
+// Import Bootstrap Utils so that we can amend them
+@import '~bootstrap/scss/utilities';
+
+$utilities: map-merge(
+  $utilities,
+  (
+    /* cursor */
+    "cursor": (
+      property: cursor,
+      values: (
+        default: default,
+        pointer: pointer
+      )
+    ),
+    /* Fixed width util */
+    "fixed-width": (
+      property: width,
+      class: f-w,
+      responsive: true,
+      values: map-merge($fixed-widths, (0:0))
+    ),
+    /* Fixed height util - we use fixed width SASS vals to keep CSS clean */
+    "fixed-height": (
+      property: height,
+      class: f-h,
+      responsive: true,
+      values: map-merge($fixed-widths, (0:0))
+    ),
+    /* Max height util - we use fixed width SASS vals to keep CSS clean */
+    "max-height": (
+      property: max-height,
+      class: m-h,
+      responsive: true,
+      values: map-merge($fixed-widths, (0:0))
+    ),
+    /* transform - translateY*/
+    "translate-y": (
+      property: transform,
+      class: transform-y,
+      values: (
+        0: translateY(0),
+        25: translateY(25%),
+        50: translateY(50%),
+        75: translateY(75%),
+        100: translateY(100%),
+        -25: translateY(-25%),
+        -50: translateY(-50%),
+        -75: translateY(-75%),
+        -100: translateY(-100%)
+      )
+    ),
+    /* Amend vertical align */
+    "align": map-merge(
+      map-get($utilities, "align"),
+      (
+        values: (
+          baseline: baseline,
+          top: top, 
+          middle: middle,
+          bottom: bottom, 
+          text-bottom: text-bottom,
+          text-top: text-top,
+          sub: sub
+        )
+      )
+    ),
+    /* Amend width util */
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (10: 10%, 60: 60%, 65: 65%, 80: 80%, 110: 110%),
+        ),
+      ),
+    ),
+    /* Amend height util */
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        responsive: true
+      ),
+    ),
+    /* Amend font size util */
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      (
+        responsive: true
+      ),
+    ),
+    /* Amend position util */
+    "position": map-merge(
+      map-get($utilities, "position"),
+      (
+        responsive: true
+      ),
+    ),
+    /* Amend border color to include hover state*/
+    "border-color": map-merge(
+      map-get($utilities, "border-color"),
+      (
+        state: hover focus active,
+        values: map-merge(
+          map-get(map-get($utilities, "border-color"), "values"),
+          (transparent: transparent)
+        )
+      )
+    ),
+    /* Amend text color to include states */
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        state: hover focus active
+      )
+    ), 
+    /* Amend text color to include states */
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        state: hover,
+        responsive: true
+      )
+    ),   
+    /* Amend shadow to add states */
+    "shadow": map-merge(
+      map-get($utilities, "shadow"),
+      (
+        state: hover focus active
+      )
+    ),
+    /* Amend border to add states */
+    "border": map-merge(
+      map-get($utilities, "border"),
+      (
+        state: hover focus active,
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "border"), "values"),
+          (transparent: $border-width solid transparent)
+        )
+      )
+    ),  
+    /* add letter spacing */
+    "letter-spacing": (
+      property: letter-spacing,
+      class: tracking,
+      values: $letter-spacing
+    ),
+    /* opacity util */
+    "opacity": (
+      property: opacity,
+      state: hover,
+      values: (
+        0: 0,
+        5: 5%,
+        10: .10,
+        25: .25,
+        50: .5,
+        75: .75,
+        90: .90,
+        100: 1,
+      )
+    ),
+    /* transition util */
+    "transition": (
+      property: transition,
+      values: ( "all": all linear .3s)
+    ),
+    /* z-index util */
+    "z-index": (
+      property: z-index,
+      values: (
+        "n1": -1,
+        "0": 0,
+        "1": 1,
+        "10": 10,
+        "20": 20,
+        "30": 30,
+        "40": 40,
+        "50": 50
+      )
+    ),
+    /* Amend viewport height to include additional sizes*/
+    "viewport-height": map-merge(
+      map-get($utilities, "viewport-height"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "viewport-height"), "values"),
+          (10: 10vh, 25: 25vh, 50: 50vh, 75: 75vh)
+        )
+      )
+    ),
+    /* Overflow */
+    "overflow": map-merge(
+      map-get($utilities, "overflow"),
+      (
+        responsive: true,
+        values: auto hidden visible scroll,
+      )
+    ),    
+      /* Amend min viewport height to include additional sizes*/
+      "min-viewport-height": map-merge(
+        map-get($utilities, "min-viewport-height"),
+        (
+          values: map-merge(
+            map-get(map-get($utilities, "min-viewport-height"), "values"),
+            (10: 10vh, 25: 25vh, 40: 40vh, 50: 50vh, 60: 60vh, 75: 75vh)
+          )
+        )
+      ),
+      /* Add max viewport height*/
+      "max-viewport-height": (
+        property: max-height,
+        class: max-vh,
+        values: (
+          10: 10vh,
+          25: 25vh,
+          50: 50vh,
+          60: 60vh,
+          75: 75vh
+        )
+      ),
+      /* Amend viewport width to include additional sizes*/
+      "viewport-width": map-merge(
+        map-get($utilities, "viewport-width"),
+        (
+          values: map-merge(
+            map-get(map-get($utilities, "viewport-width"), "values"),
+            (10: 10vw, 25: 25vw, 50: 50vw, 75: 75vw)
+          )
+        )
+      ),
+      /* Amend min viewport width to include additional sizes*/
+      "min-viewport-width": map-merge(
+        map-get($utilities, "min-viewport-width"),
+        (
+          values: map-merge(
+            map-get(map-get($utilities, "min-viewport-width"), "values"),
+            (10: 10vw, 25: 25vw, 50: 50vw, 75: 75vw)
+          )
+        )
+      ),            
+  )
+)

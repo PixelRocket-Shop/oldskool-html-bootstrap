@@ -1,0 +1,18 @@
+.rating {
+    .stars {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+
+        &.position-absolute {
+            position: absolute;
+            z-index: 2;
+            flex-wrap: nowrap;
+        }
+
+        i {
+            display: inline-block;
+        }
+    }
+}

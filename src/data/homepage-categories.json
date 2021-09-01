@@ -1,0 +1,52 @@
+{
+    "entries": [
+        {
+            "small-title": "Must Haves",
+            "large-title": "Premium Essentials",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-7.jpg"
+        },
+        {
+            "small-title": "Curated Selection",
+            "large-title": "Our Favourites",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-2.jpg"
+        },
+        {
+            "small-title": "Streetwear Basics",
+            "large-title": "T-Shirts & Shirts",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-3.jpg"
+        },
+        {
+            "small-title": "Waterproof & Lightweight",
+            "large-title": "Jackets & Coats",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-4.jpg"
+        },
+        {
+            "small-title": "Keep Warm",
+            "large-title": "Hats & Beanies",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-5.jpg"
+        },
+        {
+            "small-title": "20% Off",
+            "large-title": "Summer Sale",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-6.jpg"
+        },
+        {
+            "small-title": "Just Arrived",
+            "large-title": "Latest Kicks",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-1.jpg"
+        },
+        {
+            "small-title": "Accessories",
+            "large-title": "Bags & Rugsacks",
+            "button-text": "Shop Now",
+            "img": "{{webRoot}}/assets/images/categories/category-8.jpg"
+        }
+    ]
+}

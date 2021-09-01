@@ -1,0 +1,89 @@
+.btn {
+    &:active, &:focus {
+        box-shadow: none;
+    }
+}
+
+/* Card quick add button */
+.btn-quick-add {
+    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity ease-in .2s;
+    opacity: 0;
+}
+.card:hover .btn-quick-add {
+    opacity: 1;
+}
+
+/* Button psuedo */
+.btn-psuedo {
+    padding-left: 0;
+    padding-right: calc(var(--theme-btn-psuedo-width) + 1rem);
+    position: relative;
+    transition: all ease-in .2s;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:before, &:after {
+        width: var(--theme-btn-psuedo-width);
+        height: var(--theme-btn-psuedo-height);
+        background-color: currentColor;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        content: "";
+    }
+
+    &:before {
+        left: calc(-1 * var(--theme-btn-psuedo-width));
+        transition: all ease-in .2s;
+    }
+    &:after {
+        right: 0;
+        transition: all ease-in .2s .1s;
+    }
+
+    &:hover {
+        padding-left: calc(var(--theme-btn-psuedo-width) + 1rem);
+        padding-right: 0;      
+        
+        &:before {
+            left: 0;
+            transition: all ease-in .2s .1s;
+        }
+        &:after {
+            right: calc(-1 * var(--theme-btn-psuedo-width));
+            transition: all ease-in .2s;
+        }
+    }
+}
+
+/* icon buttons */
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: 100%;
+
+    &.btn-lg {
+        width: 80px;
+        height: 80px;
+    }
+
+    &.btn-sm {
+        width: 36px;
+        height: 36px;
+    }
+}

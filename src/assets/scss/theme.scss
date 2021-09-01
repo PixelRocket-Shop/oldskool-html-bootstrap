@@ -1,0 +1,65 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Note: Do not write any CSS in this file. Only use it to import other CSS files.
+Note: '~' in the import statement means the file is imported from the node_modules directory. Bootstrap functions is an example.
+
+- Bootstrap Functions.
+- Bootstrap Mixins.
+- Framework SASS Variables - override Bootstrap's SASS Vars in this file.
+- Framework Mixins
+- Framework Utilities
+- Bootstrap Core
+- Framework CSS Custom Properties (CSS Variables)
+- Framework Base
+- Framework Components
+- Framework Vendors
+- Custom CSS - Add your custom CSS to this file
+*/
+
+
+
+
+/* Bootstrap Functions - DO NOT CHANGE ANYTHING IN HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import '~bootstrap/scss/functions';
+
+/* Bootstrap Mixins - DO NOT CHANGE ANYTHING IN HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import '~bootstrap/scss/mixins';
+
+/* Framework SASS Variables - GO HERE TO OVERRIDE BOOTSTRAP VARS.
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'abstracts/sass-variables';
+
+/* Framework Mixins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'abstracts/mixins';
+
+/* Framework Utilities - Needs to be imported before main bootstrap file.
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'utilities/utilities';
+
+/* Bootstrap Core - DO NOT CHANGE ANYTHING IN HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import '~bootstrap/scss/bootstrap';
+
+/* Framework Custom Properties (CSS Variables)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'abstracts/css-vars';
+
+/* Framework Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'base/base';
+
+/* Framework Components
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'components/components';
+
+/* Framework Vendor Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'vendors/vendors';
+
+/* Template Custom CSS - Add your own CSS to this file
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'custom';

@@ -1,0 +1,68 @@
+/* Collapse icon chevron styling */
+.collapse-icon-chevron {
+    position: relative;
+
+    &:before {
+        font-family: var(--theme-font-icon);
+        content: "\ea4e";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+    }
+
+    &[aria-expanded="true"] {
+        &:before {
+            content: "\ea78";
+        }
+    }
+}
+
+/* Collapse icon plus/minus styling */
+.collapse-icon-plus {
+    position: relative;
+
+    &:before {
+        font-family: var(--theme-font-icon);
+        content: "\ea13";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+    }
+
+    &[aria-expanded="true"] {
+        &:before {
+            content: "\f1af";
+        }
+    }
+}
+
+/* Collapse icon position left */
+.collapse-icon-left {
+    padding-left: 1.5rem !important;
+
+    &:before {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* Collapse icon bg dark */
+.collapse-icon-bg-dark {
+    &:before {
+        background: $gray-900;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        text-align: center;
+        color: $white;
+        line-height: 24px;
+    }
+
+    &.collapse-icon-left {
+        padding-left: 2.25rem !important;
+    }
+}

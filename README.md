@@ -47,7 +47,7 @@ There are two commands for you to run for Webpack:
 **npm run build** - this builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
 
 ## Bootstrap Documentation
-Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Bootstrap 5 is fully integrated to our template's source code. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 
 ## File structure
@@ -83,6 +83,18 @@ Step Two: in your command line, run npm install. This will install all the depen
 Step Three: in your command line, run npm start. That's it. Your browser will now open and the "dev" version of the site will be loaded.
 
 ## Handlebars Partials
+Handlebars is a template engine that allows us to keep our template source code as organised and as clean as possible. It cuts down on code duplication and through the use of helper functions, allows template developers to very quickly output large amounts of data with minimal code. [You can read more about it here](https://handlebarsjs.com).
+
+We use Handlebars for two main reasons: firstly, the use of Handlebars partials allows us to reference the same file in multiple HTML files and means that you only have to edit the code from a single source. If you're used to working with React or Vue, this would be the same as referencing a component. Secondly, the use of JSON data for our dummy catalogue data keeps our template code clean. We can easily output 10 dummy products on our listing page by outputting a basic Handlebars loop.
+
+## Example Handlebars Partial
+Open the following file in our template: src/html/index.html.
+
+Around line 10 you'll see the following code:
+
+    {{> (config config.partials.navbar)
+        configClassList=config.classes.navbar
+        classList="" }}
 
 ## Template Data
 

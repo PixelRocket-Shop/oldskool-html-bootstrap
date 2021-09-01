@@ -1,7 +1,7 @@
 # OldSkool - Bootstrap 5 HTML Responsive Template
 
 ## Overview
-OldSkool is a modern & flexible HTML Bootstrap 5 template with customizable card listings in the category page and an excellent product display on the individual product page. It's the perfect starting point for any fashion retail website, and the template's clean and minimal design means it's easy to modify and painless to integrate with your custom Ecommerce application.
+OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with customizable card listings on the category page and an excellent product display on the individual product page. It's the perfect starting point for any fashion retail website, and the template's clean and minimal design means it's easy to modify and painless to integrate with your custom Ecommerce application.
 
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/oldskool-html/homepage-medium.jpg "OldSkool | Responsive Bootstrap 5 Ecommerce Template")
 
@@ -29,6 +29,7 @@ In addition to all the Bootstrap components and features, OldSkool also offers t
 * Instagram slideshow (Swiper.js)
 * Category listing card showing sale badge, new product badge and sold out badge
 * Custom pagination component
+* Header Megamenu
 * Customer review component
 * Related products slideshow
 * Offcanvas category filter display
@@ -40,8 +41,8 @@ In addition to all the Bootstrap components and features, OldSkool also offers t
 We used Webpack 4 to compile and build the template. [You can read more about Webpack here](https://webpack.js.org/).
 
 There are two commands for you to run for Webpack:
-** npm start ** This starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
-** npm run build ** This builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
+**npm start** This starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
+**npm run build** This builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
 
 ## Bootstrap Documentation
 Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)

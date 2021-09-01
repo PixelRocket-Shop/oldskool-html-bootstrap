@@ -90,13 +90,45 @@ We use Handlebars for two main reasons: firstly, the use of Handlebars partials 
 ## Example Handlebars Partial
 Open the following file in our template: src/html/index.html.
 
-Around line 10 you'll see the following code:
+Around line 21 you'll see the following code:
 
-    {{> (config config.partials.navbar)
-        configClassList=config.classes.navbar
-        classList="" }}
+    {{> swiper/swiper-homepage-hero }}
+
+That's a Handlebars partial. That code tells Handlebars to look inside a folder called swiper (located in the partials folder) and then to find a file called swiper-homepage-hero and insert it into the index.html file when it is compiled.
+
+There are a few important notes about our use of Handlebars partials:
+
+* All of our partials are stored inside src/partials. Do not place partials anywhere else.
+* We use .html as our partial file extension. We have also added .svg as a valid partial file extension.
+* If you have folders within folders inside your partial folder, only reference the folder the partial resides in. So "partials/header/navbars/navbar.html" would be referenced as "navbars/navbar".
+* Do not include the partial file extension. Note in the example above that we output "swiper-homepage-hero" and not "swiper-homepage-hero.html"
+
+## Handlebars Loops
+Let's look at how we use Handlebars to keep our code base clean. Open up the category page: src/html/category.html. 
+
+Around line 40, you will find this code:
+
+                {{#if (config category-products)}}
+                    {{#each category-products.entries}}
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            {{> listing-cards/listing-card this }}
+                        </div>
+                    {{/each}}
+                {{/if}}
+
+And that's our loop for a category page. We're passing in JSON data to our Handlebars loop, then inside the loop we are referencing a Handlebars partial and passing it the data for each loop item:
+
+{{> listing-cards/listing-card-one this }}
 
 ## Template Data
+The Webpack Handlebars plugin that we use comes with a very handy utility that allows us to pass in JSON files as template data.
+
+Please navigate to: src/data. Here is where our template data JSON files reside. You can edit, remove or add your own to this folder.
+
+Again, if we reference our category page loop:
+
+
+
 
 ## Customising Template
 

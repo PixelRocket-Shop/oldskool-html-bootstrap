@@ -63,13 +63,13 @@ Bootstrap already has a comprehensive documentation site that will guide you in 
 
 📁 src - Template source code. Go here to customise your template.
 
-📁 assets - Template assets such as CSS, JS, Images etc.
+📁 src/assets - Template assets such as CSS, JS, Images etc.
 
-📁 data - Template JSON Data files. We use these JSON files to make your job easier to insert content into the template. 
+📁 src/data - Template JSON Data files. We use these JSON files to make your job easier to insert content into the template. 
 
-📁 html - Template pages. Go here to edit existing pages or add new pages.
+📁 src/html - Template pages. Go here to edit existing pages or add new pages.
 
-📁 partials - Handlebars partial templates. 
+📁 src/partials - Handlebars partial templates. 
 
 
 ## Requirements

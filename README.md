@@ -157,13 +157,21 @@ To create a new page, navigate in your code editor to: src/html. To make it easi
 
 ## Credits
 [Bootstrap](https://getbootstrap.com/)
+
 [AOS.js](https://michalsnik.github.io/aos/)
+
 [Unsplash](https://unsplash.com/)
+
 [Pexels](https://www.pexels.com/)
+
 [Pixabay](https://pixabay.com/)
+
 [MediumZoom.js](https://github.com/francoischalifour/medium-zoom)
+
 [NoUiSlider.js](https://refreshless.com/nouislider/)
+
 [Simplebar.js](https://github.com/Grsmto/simplebar)
+
 [Swiper.js](https://swiperjs.com/)
 
 ## Contact Us

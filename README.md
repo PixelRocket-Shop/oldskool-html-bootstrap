@@ -152,4 +152,19 @@ All of the template's source CSS/SASS files are kept inside the template's asset
 
 This is the main entry point for all other SASS/CSS files.
 
+## Edit/Create HTML Pages
+To create a new page, navigate in your code editor to: src/html. To make it easier to get the correct HTML in place, clone an existing page. Rename the newly-created file to whatever URL you require. And that's it. You are now free to open the new page with your code editor, make your changes, and then save the file. Quit Webpack devserver and restart it for the page to show up.
+
 ## Credits
+[Bootstrap](https://getbootstrap.com/)
+[AOS.js](https://michalsnik.github.io/aos/)
+[Unsplash](https://unsplash.com/)
+[Pexels](https://www.pexels.com/)
+[Pixabay](https://pixabay.com/)
+[MediumZoom.js](https://github.com/francoischalifour/medium-zoom)
+[NoUiSlider.js](https://refreshless.com/nouislider/)
+[Simplebar.js](https://github.com/Grsmto/simplebar)
+[Swiper.js](https://swiperjs.com/)
+
+## Contact Us
+You can find our website [here](https://www.pixelrocket.store) or you can email us at support@pixelrocket.store

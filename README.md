@@ -6,7 +6,7 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/oldskool-html/homepage-medium.jpg "OldSkool | Responsive Bootstrap 5 Ecommerce Template")
 
 ## Demo
-[Demo](http://example.com/)
+[Demo](https://oldskool-html-bootstrap.vercel.app/)
 
 **Please note that this is an HTML template only. It does not connect to a database, and will not automatically work in a content management system (Wordpress etc). You will need to incorporate our code into your application.**
 

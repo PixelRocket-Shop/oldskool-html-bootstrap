@@ -36,12 +36,22 @@ In addition to all the Bootstrap components and features, OldSkool also offers t
 * Slidedown search bar
 
 
+## Build Tool
+We used Webpack 4 to compile and build the template. [You can read more about Webpack here](https://webpack.js.org/).
+
+There are two commands for you to run for Webpack:
+** npm start ** This starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
+** npm run build ** This builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
+
 ## Bootstrap Documentation
 Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
+
 ## File structure
 📁 dist - Generated version of the template. Go here if you do not want to work with the template source code. But be warned: if you customise anything in this folder directly, and then later recompile the template using webpack, unless you move the dist folder out of the template, your changes will be overridden.
+
 📁 node_modules - Directory where NPM installs dependancies. You will not see this folder until you complete the template installation. You do not need to create this folder.
+
 📁 src - Template source code. Go here to customise your template.
 
 📁 assets - Template assets such as CSS, JS, Images etc.
@@ -54,8 +64,20 @@ Bootstrap already has a comprehensive documentation site that will guide you in 
 
 
 ## Requirements
+If you do not intend to work with the template source code (and that means you will not be compiling it or running the Webpack dev server), you do not need to install anything. You can simply navigate to the dist folder and start editing the files.
+
+Most developers will be editing the source code and will also be running Webpack to compile the template. If that's the case, then ensure that you have Node.js installed. [You can download it from here](https://nodejs.org/en/download/)
+
+That's all you need to have pre-installed. You can now open the main template folder with your command line.
 
 ## Installation & Build
+You only need to do the following steps if you intend to run Webpack and recompile the template. Please also ensure that you have Node.js installed.
+
+Step One: open up the template folder in your command line. Ensure you are inside the root of the template.
+
+Step Two: in your command line, run npm install. This will install all the dependancies listed in your package.json file.
+
+Step Three: in your command line, run npm start. That's it. Your browser will now open and the "dev" version of the site will be loaded.
 
 ## Handlebars Partials
 

@@ -3,6 +3,7 @@ import 'bootstrap';
 
 
 // Components
+import './components/aos';
 import './components/cart-dropdown';
 import './components/medium-zoom';
 import './components/navbar';

@@ -15,7 +15,7 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 - [Demo Link](#demo-link)
 - [Template Key Features](#template-key-features)
 - [Template File Structure](#template-file-structure)
-- [Handlebars & Template Partials](#handlebars-and-template-partials)
+- [Handlebars & Template Partials](#handlebars-&-template-partials)
 - [Template JSON Data](#template-json-data)
 - [Customise Template Styles](#customise-template-styles)
 - [Create New Pages](#create-new-pages)

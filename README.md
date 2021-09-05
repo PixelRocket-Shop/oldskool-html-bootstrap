@@ -48,14 +48,15 @@ To keep code repetition to a minimum, we've used Handlebars.js as the templating
 
 * Homepage slideshow (using Swiper.js)
 * Built with Bootstrap 5
-* Brand logo marquee 
-* Homepage featured categories (using Swiper.js)
-* Instagram slideshow (Swiper.js)
+* Fully responsive
+* Brand logo marquee component
+* Homepage featured categories component (using Swiper.js)
+* Instagram slideshow component (Swiper.js)
 * Category listing card showing sale badge, new product badge and sold out badge
 * Custom pagination component
 * Header Megamenu
 * Customer review component
-* Related products slideshow
+* Related products slideshow component
 * Offcanvas category filter display
 * Header cart drop down display
 * Slidedown search bar

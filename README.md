@@ -31,8 +31,7 @@ Most developers will be editing the source code and will also be running Webpack
 
 
 ## Quick Start
-- [Download the latest release](https://github.com/PixelRocket-Shop/oldskool-html-bootstrap/archive/main.zip)
-- OR clone the repo: `git clone https://github.com/PixelRocket-Shop/oldskool-html-bootstrap.git`
+- [Download the latest release](https://github.com/PixelRocket-Shop/oldskool-html-bootstrap/archive/main.zip) OR clone the repo: `git clone https://github.com/PixelRocket-Shop/oldskool-html-bootstrap.git`
 - Install Node.js if you don't already have it on your system.
 - Open the project root in your command line.
 - run `npm install`

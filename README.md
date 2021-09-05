@@ -7,16 +7,13 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/oldskool-html/homepage-medium.jpg "OldSkool | Responsive Bootstrap 5 Ecommerce Template")
 
-## Demo
-[Demo](https://oldskool-html-bootstrap.vercel.app/)
-
-**Please note that this is an HTML template only. It does not connect to a database, and will not automatically work in a content management system (Wordpress etc). You will need to incorporate our code into your application.**
-
 ## Table of contents
 
 - [Quick Start](#quick-start)
 - [Template Pages](#template-pages)
+- [Demo Link](#demo-link)
 - [Template Key Features](#template-key-features)
+- [Bootstrap Documentation](#bootstrap-documentation)
 - [Template File Structure](#template-file-structure)
 - [Handlebars & Partials](#handlebars-and-partials)
 - [Template JSON Data](#template-json-data)
@@ -42,11 +39,15 @@ The template consists of 3 pages:
 
 To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add the same code to different pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
+## Demo Link
+[Demo URL](https://oldskool-html-bootstrap.vercel.app/)
+
+**Please note that this is an HTML template only. It does not connect to a database, and will not automatically work in a content management system (Wordpress etc). You will need to incorporate our code into your application.**
 
 ## Template Key Features
-In addition to all the Bootstrap components and features, OldSkool also offers the following custom components:
 
 * Homepage slideshow (using Swiper.js)
+* Built with Bootstrap 5
 * Brand logo marquee 
 * Homepage featured categories (using Swiper.js)
 * Instagram slideshow (Swiper.js)
@@ -58,22 +59,6 @@ In addition to all the Bootstrap components and features, OldSkool also offers t
 * Offcanvas category filter display
 * Header cart drop down display
 * Slidedown search bar
-
-
-## Build Tool
-We used Webpack 4 to compile and build the template. [You can read more about Webpack here](https://webpack.js.org/).
-
-There are two commands for you to run for Webpack:
-
-```
-npm start
-```
-This starts the Webpack devserver. It will automatically open the site in your browser. Any time you save a file, the browser will refresh. Be aware that if you amend the JSON data, or add a new file after starting Webpack devserver, you may have to restart Webpack for it to pickup the new file/data change.
-
-```
-npm run build
-```
-This builds your template. It uses the files located in the src folder and outputs the compiled files to the dist folder.
 
 ## Bootstrap Documentation
 Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Bootstrap 5 is fully integrated to our template's source code. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)

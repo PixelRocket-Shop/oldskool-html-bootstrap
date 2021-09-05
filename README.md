@@ -9,17 +9,26 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 
 ## Table of contents
 
+- [Requirements](#requirements)
 - [Quick Start](#quick-start)
 - [Template Pages](#template-pages)
 - [Demo Link](#demo-link)
 - [Template Key Features](#template-key-features)
-- [Bootstrap Documentation](#bootstrap-documentation)
 - [Template File Structure](#template-file-structure)
-- [Handlebars & Partials](#handlebars-and-partials)
+- [Handlebars & Template Partials](#handlebars-and-template-partials)
 - [Template JSON Data](#template-json-data)
-- [Customise CSS/SASS](#customise-css-sass)
+- [Customise Template Styles](#customise-template-styles)
 - [Create New Pages](#create-new-pages)
+- [Bootstrap Documentation](#bootstrap-documentation)
 - [Credits](#credits)
+- [Contact Us](#contact-us)
+
+
+## Requirements
+If you do not intend to work with the template source code (and that means you will not be compiling it or running the Webpack dev server), you do not need to install anything. You can simply navigate to the dist folder and start editing the files.
+
+Most developers will be editing the source code and will also be running Webpack to recompile the template files. If that's the case, then ensure that you have Node.js installed. [You can download it from here](https://nodejs.org/en/download/)
+
 
 ## Quick Start
 - [Download the latest release](https://github.com/PixelRocket-Shop/oldskool-html-bootstrap/archive/main.zip)
@@ -30,6 +39,7 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 - run `npm start` to start Webpack devserver.
 - if you want to recompile the template files (which output to the dist folder), run `npm run build`
 
+
 ## Template Pages
 The template consists of 3 pages:
 
@@ -39,10 +49,12 @@ The template consists of 3 pages:
 
 To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add the same code to different pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
+
 ## Demo Link
 [Demo URL](https://oldskool-html-bootstrap.vercel.app/)
 
 **Please note that this is an HTML template only. It does not connect to a database, and will not automatically work in a content management system (Wordpress etc). You will need to incorporate our code into your application.**
+
 
 ## Template Key Features
 
@@ -61,11 +73,8 @@ To keep code repetition to a minimum, we've used Handlebars.js as the templating
 * Header cart drop down display
 * Slidedown search bar
 
-## Bootstrap Documentation
-Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Bootstrap 5 is fully integrated to our template's source code. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-
-## File structure
+## Template File structure
 📁 dist - Generated version of the template. Go here if you do not want to work with the template source code. But be warned: if you customise anything in this folder directly, and then later recompile the template using webpack, unless you move the dist folder out of the template, your changes will be overridden.
 
 📁 node_modules - Directory where NPM installs dependancies. You will not see this folder until you complete the template installation. You do not need to create this folder.
@@ -81,28 +90,12 @@ Bootstrap already has a comprehensive documentation site that will guide you in 
 📁 src/partials - Handlebars partial templates. 
 
 
-## Requirements
-If you do not intend to work with the template source code (and that means you will not be compiling it or running the Webpack dev server), you do not need to install anything. You can simply navigate to the dist folder and start editing the files.
-
-Most developers will be editing the source code and will also be running Webpack to compile the template. If that's the case, then ensure that you have Node.js installed. [You can download it from here](https://nodejs.org/en/download/)
-
-That's all you need to have pre-installed. You can now open the main template folder with your command line.
-
-## Installation & Build
-You only need to do the following steps if you intend to run Webpack and recompile the template. Please also ensure that you have Node.js installed.
-
-Step One: open up the template folder in your command line. Ensure you are inside the root of the template.
-
-Step Two: in your command line, run npm install. This will install all the dependancies listed in your package.json file.
-
-Step Three: in your command line, run npm start. That's it. Your browser will now open and the "dev" version of the site will be loaded.
-
-## Handlebars Partials
+## Handlebars & Template Partials
 Handlebars is a template engine that allows us to keep our template source code as organised and as clean as possible. It cuts down on code duplication and through the use of helper functions, allows template developers to very quickly output large amounts of data with minimal code. [You can read more about it here](https://handlebarsjs.com).
 
 We use Handlebars for two main reasons: firstly, the use of Handlebars partials allows us to reference the same file in multiple HTML files and means that you only have to edit the code from a single source. If you're used to working with React or Vue, this would be the same as referencing a component. Secondly, the use of JSON data for our dummy catalogue data keeps our template code clean. We can easily output 10 dummy products on our listing page by outputting a basic Handlebars loop.
 
-## Example Handlebars Partial
+### Example Handlebars Partial
 Open the following file in our template: src/html/index.html.
 
 Around line 21 you'll see the following code:
@@ -118,7 +111,7 @@ There are a few important notes about our use of Handlebars partials:
 * If you have folders within folders inside your partial folder, only reference the folder the partial resides in. So "partials/header/navbars/navbar.html" would be referenced as "navbars/navbar".
 * Do not include the partial file extension. Note in the example above that we output "swiper-homepage-hero" and not "swiper-homepage-hero.html"
 
-## Handlebars Loops
+### Handlebars Loops
 Let's look at how we use Handlebars to keep our code base clean. Open up the category page: src/html/category.html. 
 
 Around line 40, you will find this code:
@@ -135,7 +128,7 @@ And that's our loop for a category page. We're passing in JSON data to our Handl
 ```
 {{> listing-cards/listing-card-one this }}
 ```
-## Template Data
+### Template Data
 The Webpack Handlebars plugin that we use comes with a very handy utility that allows us to pass in JSON files as template data.
 
 Please navigate to: src/data. Here is where our template data JSON files reside. You can edit, remove or add your own to this folder.
@@ -156,13 +149,19 @@ The important part here with regards to template data is category-products.entri
 
 
 
-## Customise CSS/SASS
+## Customise Template Styles
 All of the template's source CSS/SASS files are kept inside the template's assets folder. Navigate to src/assets/scss. Open up theme.scss with your editor.
 
 This is the main entry point for all other SASS/CSS files.
 
-## Edit/Create HTML Pages
+
+## Create New Pages
 To create a new page, navigate in your code editor to: src/html. To make it easier to get the correct HTML in place, clone an existing page. Rename the newly-created file to whatever URL you require. And that's it. You are now free to open the new page with your code editor, make your changes, and then save the file. Quit Webpack devserver and restart it for the page to show up.
+
+
+## Bootstrap Documentation
+Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Bootstrap 5 is fully integrated to our template's source code. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
 
 ## Credits
 [Bootstrap](https://getbootstrap.com/)

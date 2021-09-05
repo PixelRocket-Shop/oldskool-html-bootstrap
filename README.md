@@ -34,7 +34,7 @@ Most developers will be editing the source code and will also be running Webpack
 - [Download the latest release](https://github.com/PixelRocket-Shop/oldskool-html-bootstrap/archive/main.zip) OR clone the repo: `git clone https://github.com/PixelRocket-Shop/oldskool-html-bootstrap.git`
 - Install Node.js if you don't already have it on your system.
 - Open the project root in your command line.
-- run `npm install`
+- run `npm install` in your command line.
 - run `npm start` to start Webpack devserver.
 - if you want to recompile the template files (which output to the dist folder), run `npm run build`
 
@@ -127,7 +127,7 @@ And that's our loop for a category page. We're passing in JSON data to our Handl
 ```
 {{> listing-cards/listing-card-one this }}
 ```
-### Template Data
+## Template JSON Data
 The Webpack Handlebars plugin that we use comes with a very handy utility that allows us to pass in JSON files as template data.
 
 Please navigate to: src/data. Here is where our template data JSON files reside. You can edit, remove or add your own to this folder.

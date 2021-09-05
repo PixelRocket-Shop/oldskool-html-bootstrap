@@ -15,7 +15,7 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 - [Demo Link](#demo-link)
 - [Template Key Features](#template-key-features)
 - [Template File Structure](#template-file-structure)
-- [Handlebars & Template Partials](#handlebars-&-template-partials)
+- [Handlebars](#handlebars)
 - [Template JSON Data](#template-json-data)
 - [Customise Template Styles](#customise-template-styles)
 - [Create New Pages](#create-new-pages)
@@ -89,7 +89,7 @@ To keep code repetition to a minimum, we've used Handlebars.js as the templating
 📁 src/partials - Handlebars partial templates. 
 
 
-## Handlebars & Template Partials
+## Handlebars
 Handlebars is a template engine that allows us to keep our template source code as organised and as clean as possible. It cuts down on code duplication and through the use of helper functions, allows template developers to very quickly output large amounts of data with minimal code. [You can read more about it here](https://handlebarsjs.com).
 
 We use Handlebars for two main reasons: firstly, the use of Handlebars partials allows us to reference the same file in multiple HTML files and means that you only have to edit the code from a single source. If you're used to working with React or Vue, this would be the same as referencing a component. Secondly, the use of JSON data for our dummy catalogue data keeps our template code clean. We can easily output 10 dummy products on our listing page by outputting a basic Handlebars loop.

@@ -12,6 +12,27 @@ OldSkool is a modern & flexible responsive HTML Bootstrap 5 template with custom
 
 **Please note that this is an HTML template only. It does not connect to a database, and will not automatically work in a content management system (Wordpress etc). You will need to incorporate our code into your application.**
 
+## Table of contents
+
+- [Quick Start](#quick-start)
+- [Template Pages](#template-pages)
+- [Template Key Features](#template-key-features)
+- [Template File Structure](#template-file-structure)
+- [Handlebars & Partials](#handlebars-and-partials)
+- [Template JSON Data](#template-json-data)
+- [Customise CSS/SASS](#customise-css-sass)
+- [Create New Pages](#create-new-pages)
+- [Credits](#credits)
+
+## Quick Start
+- [Download the latest release](https://github.com/PixelRocket-Shop/oldskool-html-bootstrap/archive/main.zip)
+- OR clone the repo: `git clone https://github.com/PixelRocket-Shop/oldskool-html-bootstrap.git`
+- Install Node.js if you don't already have it on your system.
+- Open the project root in your command line.
+- run `npm install`
+- run `npm start` to start Webpack devserver.
+- if you want to recompile the template files (which output to the dist folder), run `npm run build`
+
 ## Template Pages
 The template consists of 3 pages:
 
@@ -22,7 +43,7 @@ The template consists of 3 pages:
 To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add the same code to different pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
 
-## OldSkool Key Features
+## Template Key Features
 In addition to all the Bootstrap components and features, OldSkool also offers the following custom components:
 
 * Homepage slideshow (using Swiper.js)

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Main Section-->
+    <section class="mt-0 {{ config.classes.content }} vh-lg-100">
+        <!-- Page Content Goes Here -->
+        <div class="container">
+            <div class="row g-0 vh-lg-100">
+                <div class="col-lg-7 pt-5 pt-lg-10">
+                    <div class="pe-lg-5">
+                        {{> checkout/checkout-header active-information="true" }}
+                        <div class="mt-5">
+                            {{> checkout/checkout-information }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
+                    <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
+                        {{> checkout/checkout-summary }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

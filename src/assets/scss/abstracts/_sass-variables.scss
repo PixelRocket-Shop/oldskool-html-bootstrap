@@ -721,7 +721,7 @@ $form-label-font-style:                 null !default;
 $form-label-font-weight:                500 !default;
 $form-label-color:                      null !default;
 
-$input-padding-y:                       .65rem;
+$input-padding-y:                       .85rem;
 $input-padding-x:                       .75rem; 
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
@@ -741,7 +741,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $border-color !default;
+$input-border-color:                    $gray-300 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -782,7 +782,7 @@ $form-check-transition:                   background-color .15s ease-in-out, bac
 $form-check-input-active-filter:          brightness(90%) !default;
 
 $form-check-input-bg:                     $body-bg !default;
-$form-check-input-border:                 1px solid rgba(0, 0, 0, .25) !default;
+$form-check-input-border:                 1px solid rgba(228, 228, 228, 0.25) !default;
 $form-check-input-border-radius:          .25em !default;
 $form-check-radio-border-radius:          50% !default;
 $form-check-input-focus-border:           $input-focus-border-color !default;

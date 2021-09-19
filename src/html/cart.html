@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Main Section-->
+    <section class="mt-0 overflow-lg-hidden {{ config.classes.content }} vh-lg-100">
+        <!-- Page Content Goes Here -->
+        <div class="container">
+            <div class="row g-0 vh-lg-100">
+                <div class="col-12 col-lg-7 pt-5 pt-lg-10">
+                    <div class="pe-lg-5">
+                        {{> checkout/checkout-header active-cart="true" }}
+                        <div class="mt-5">
+                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Your Cart</h3>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <tbody class="border-0">
+                                        <!-- Cart Item-->
+                                        {{>
+                                            cart/cart-item 
+                                            img="{{webRoot}}/assets/images/products/product-cart-1.jpg"
+                                            border="true"
+                                            name="Nike Air VaporMax 2021"
+                                            qty="1"
+                                            options="Size: 9"
+                                            price="$85.00"
+                                        }}
+                                        <!-- / Cart Item-->
+                                        <!-- Cart Item-->
+                                        {{>
+                                            cart/cart-item 
+                                            img="{{webRoot}}/assets/images/products/product-cart-2.jpg"
+                                            border="true"
+                                            name="Nike ZoomX Vaporfly"
+                                            qty="1"
+                                            options="Size: 11"
+                                            price="$125.00"
+                                        }}
+                                        <!-- / Cart Item-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
+                    <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
+                        {{> cart/cart-summary }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

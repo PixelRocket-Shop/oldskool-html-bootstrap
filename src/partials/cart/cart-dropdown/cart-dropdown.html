@@ -12,8 +12,8 @@
 
         <!-- Cart Product-->
         {{> 
-            cart-dropdown/cart-dropdown-item 
-            img="{{webRoot}}/assets/images/products/product-1.jpg"
+            cart/cart-item 
+            img="{{webRoot}}/assets/images/products/product-cart-1.jpg"
             name="Nike Air VaporMax 2021"
             qty="1"
             options="Size: 9"
@@ -22,8 +22,8 @@
 
         <!-- Cart Product-->
         {{> 
-            cart-dropdown/cart-dropdown-item 
-            img="{{webRoot}}/assets/images/products/product-2.jpg"
+            cart/cart-item 
+            img="{{webRoot}}/assets/images/products/product-cart-2.jpg"
             name="Nike ZoomX Vaporfly"
             qty="1"
             options="Size: 11"
@@ -44,7 +44,8 @@
                 <p class="m-0 fs-5 fw-bold">$422.99</p>
             </div>
         </div>
-        <a href="#" class="btn btn-dark w-100 text-center mt-3" role="button">Proceed to checkout</a>
+        <a href="{{webRoot}}/cart.html" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View cart</a>
+        <a href="{{webRoot}}/checkout.html" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed to checkout</a>
     </div>
     <!-- / Cart Summary-->
   </div>

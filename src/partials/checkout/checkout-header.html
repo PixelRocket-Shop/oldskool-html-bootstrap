@@ -1,0 +1,17 @@
+<!-- Logo-->
+<a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="{{webRoot}}/index.html">
+        {{> logo/logo-icon }}
+    </a>
+<!-- / Logo-->
+<nav class="d-none d-md-block">
+    <ul class="list-unstyled d-flex justify-content-start mt-4 align-items-center fw-bolder small">
+        <li class="me-4"><a class="nav-link-checkout {{#if active-cart}}active{{/if}}"
+                href="{{webRoot}}/cart.html">Your Cart</a></li>
+        <li class="me-4"><a class="nav-link-checkout {{#if active-information}}active{{/if}}"
+                href="{{webRoot}}/checkout.html">Information</a></li>
+        <li class="me-4"><a class="nav-link-checkout {{#if active-shipping}}active{{/if}}"
+                href="{{webRoot}}/checkout-shipping.html">Shipping</a></li>
+        <li><a class="nav-link-checkout nav-link-last {{#if active-payment}}active{{/if}}"
+                href="{{webRoot}}/checkout-payment.html">Payment</a></li>
+    </ul>
+</nav>

@@ -1,6 +1,9 @@
 <div class="row mx-0 py-4 g-0 border-bottom">
-    <div class="col-2">
-        <picture class="d-block bg-light">
+    <div class="col-2 position-relative">
+        {{#if showQty}}
+            <span class="checkout-item-qty">3</span>
+        {{/if}}
+        <picture class="d-block {{#if border}}border{{/if}}">
             <img class="img-fluid" src="{{ img }}" alt="{{config.defaultImgAlt}}">
         </picture>
     </div>

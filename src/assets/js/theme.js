@@ -5,6 +5,7 @@ import 'bootstrap';
 // Components
 import './components/aos';
 import './components/cart-dropdown';
+import './components/checkout';
 import './components/medium-zoom';
 import './components/navbar';
 import './components/nouislider';

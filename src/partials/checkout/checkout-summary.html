@@ -1,0 +1,60 @@
+<div class="pb-3">
+    <!-- Cart Item-->
+    {{>
+        cart/cart-item 
+        img="{{webRoot}}/assets/images/products/product-cart-1.jpg"
+        border="true"
+        showQty="true"
+        name="Nike Air VaporMax 2021"
+        qty="1"
+        options="Size: 9"
+        price="$85.00"
+    }}
+    <!-- / Cart Item-->
+    <!-- Cart Item-->
+    {{>
+        cart/cart-item 
+        img="{{webRoot}}/assets/images/products/product-cart-2.jpg"
+        border="true"
+        showQty="true"
+        name="Nike ZoomX Vaporfly"
+        qty="1"
+        options="Size: 11"
+        price="$125.00"
+    }}
+    <!-- / Cart Item-->
+</div>
+<div class="py-4 border-bottom">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <p class="m-0 fw-bolder fs-6">Subtotal</p>
+        <p class="m-0 fs-6 fw-bolder">$422.99</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center ">
+        <p class="m-0 fw-bolder fs-6">Shipping</p>
+        <p class="m-0 fs-6 fw-bolder">$8.95</p>
+    </div>
+</div>
+<div class="py-4 border-bottom">
+    <div class="d-flex justify-content-between">
+        <div>
+            <p class="m-0 fw-bold fs-5">Grand Total</p>
+            <span class="text-muted small">Inc $45.89 sales tax</span>
+        </div>
+        <p class="m-0 fs-5 fw-bold">$422.99</p>
+    </div>
+</div>
+<div class="py-4">
+    <div class="input-group mb-0">
+        <input type="text" class="form-control" placeholder="Enter your coupon code">
+        <button class="btn btn-dark btn-sm px-4">Apply</button>
+    </div>
+</div>
+{{#if show-action-buttons}}
+<!-- Accept Terms Checkbox-->
+<div class="form-group form-check my-4">
+    <input type="checkbox" class="form-check-input" id="accept-terms" checked>
+    <label class="form-check-label fw-bolder" for="accept-terms">I agree to Outdoorly's <a href="#">terms &
+            conditions</a></label>
+</div>
+<a href="{{webRoot}}/order-success.html" class="btn btn-dark w-100" role="button">Complete Order</a>
+{{/if}}

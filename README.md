@@ -69,6 +69,8 @@ To keep code repetition to a minimum, we've used Handlebars.js as the templating
 * Homepage featured categories component (using Swiper.js)
 * Instagram slideshow component (Swiper.js)
 * Category listing card showing sale badge, new product badge and sold out badge
+* Distraction-free cart and checkout pages
+* Login, register and forgotten password pages
 * Custom pagination component
 * Header Megamenu
 * Customer review component
